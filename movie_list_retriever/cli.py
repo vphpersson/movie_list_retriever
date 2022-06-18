@@ -1,14 +1,6 @@
-from enum import Enum
-
 from typed_argument_parser import TypedArgumentParser
 
-
-class SupportedSource(Enum):
-    NEW_YORK_TIMES = 'new_york_times'
-    FILMSTADEN = 'filmstaden'
-
-    def __str__(self) -> str:
-        return self.value
+from movie_list_retriever import SupportedSource
 
 
 class MovieListRetrieverArgumentParser(TypedArgumentParser):
